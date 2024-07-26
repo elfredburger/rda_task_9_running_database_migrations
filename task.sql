@@ -51,4 +51,5 @@ CREATE TABLE Users (
 
 --changeset vlad.hryshchenko:2 labels :0.0.3
 CREATE INDEX Email ON ShopDB.Users(Email);
---rollback DROP INDEX Email ON Users;
+--rollback ALTER TABLE Users DROP INDEX Email;
+
